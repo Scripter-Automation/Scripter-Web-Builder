@@ -2,6 +2,11 @@
 
 A powerful visual web builder built with **SvelteKit** that allows you to visually edit and design web pages with real-time CSS property editing. Think of it as a visual code editor that combines the power of SvelteKit with an intuitive drag-and-drop interface.
 
+**🎯 Key Benefits:**
+- **No Bloat**: Doesn't add any unnecessary dependencies or bloatware to your project
+- **Real-time File Editing**: Edits your actual source files directly - no need to save changes manually
+- **Lightweight**: Minimal footprint that works with your existing SvelteKit projects
+
 ## ✨ Features
 
 ### 🎨 Visual Editor
@@ -30,6 +35,8 @@ A powerful visual web builder built with **SvelteKit** that allows you to visual
 - **TypeScript Support**: Full TypeScript support for type safety
 - **Hot Reload**: Instant updates during development
 - **Responsive Design**: Works on desktop and tablet devices
+- **Zero Bloat**: No additional dependencies added to your project
+- **Direct File Editing**: Changes are applied directly to your source files in real-time
 
 ## 🚀 Quick Start
 
@@ -114,6 +121,12 @@ A powerful visual web builder built with **SvelteKit** that allows you to visual
 - **File Tree**: Browse your entire project structure
 - **File Selection**: Click any file to open and edit
 - **Real-time Updates**: Changes are saved automatically
+
+#### Direct File Editing
+- **No Save Required**: All changes are applied directly to your source files
+- **Instant Persistence**: Edits are written to disk immediately
+- **Version Control Ready**: Changes work seamlessly with Git and other VCS
+- **No Temporary Files**: No intermediate files or export steps needed
 
 ### 🧩 Adding Elements
 

@@ -48,7 +48,7 @@ A powerful visual web builder built with **SvelteKit** that allows you to visual
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Scripter-Automation/Scripter-Web-Builder.git
    cd web_builder
    ```
 

@@ -15,7 +15,7 @@
 				<h1 class="title">🛠️ Development Toolkit</h1>
 				<p class="subtitle">Professional tools for SvelteKit development, documentation, and content creation</p>
 				<div class="tools-count">
-					                <span class="count-badge">6 Tools Available</span>
+					                		<span class="count-badge">6 Tools Available</span>
 				</div>
 			</div>
 			<div class="header-right">
@@ -69,6 +69,8 @@
 				</div>
 				<a href="/toolkit/security-tools" class="tool-link">Open Security Tools</a>
 			</div>
+
+
 
 			<div class="tool-card priority-medium">
 				<div class="tool-icon">📝</div>

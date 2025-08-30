@@ -1,0 +1,128 @@
+---
+title: "Laboratory Safety SOP"
+author: "Safety Department"
+date: "2024-01-15"
+version: "1.0"
+---
+
+# Laboratory Safety Standard Operating Procedure
+
+## Overview
+This Standard Operating Procedure (SOP) outlines the safety protocols and procedures for working in the laboratory environment.
+
+## Purpose
+To ensure the safety of all personnel working in laboratory facilities and to prevent accidents, injuries, and exposure to hazardous materials.
+
+## Scope
+This SOP applies to all laboratory personnel, including:
+- Researchers
+- Technicians
+- Students
+- Visitors
+
+## Safety Equipment Requirements
+
+### Personal Protective Equipment (PPE)
+- **Safety Glasses**: Must be worn at all times
+- **Lab Coat**: Required for all laboratory work
+- **Gloves**: Appropriate gloves for chemical handling
+- **Closed-toe Shoes**: No sandals or open footwear
+
+### Emergency Equipment
+- Fire extinguishers (Type ABC)
+- Emergency eyewash stations
+- Safety showers
+- First aid kits
+
+## Procedures
+
+### Before Starting Work
+1. **Check Equipment**: Ensure all equipment is in good working condition
+2. **Review MSDS**: Read Material Safety Data Sheets for chemicals being used
+3. **Prepare Work Area**: Clear workspace and organize materials
+4. **Don PPE**: Put on appropriate personal protective equipment
+
+### During Work
+1. **Maintain Cleanliness**: Keep work area clean and organized
+2. **Follow Protocols**: Adhere to specific experimental procedures
+3. **Monitor Conditions**: Watch for unusual odors, sounds, or conditions
+4. **Stay Alert**: Remain focused and avoid distractions
+
+### After Work
+1. **Clean Up**: Properly dispose of waste and clean equipment
+2. **Remove PPE**: Take off gloves and lab coat before leaving
+3. **Wash Hands**: Thoroughly wash hands with soap and water
+4. **Report Issues**: Document any incidents or near-misses
+
+## Emergency Procedures
+
+### Chemical Spill
+1. **Assess Risk**: Determine if spill is manageable or requires evacuation
+2. **Contain Spill**: Use appropriate absorbent materials
+3. **Clean Up**: Follow proper disposal procedures
+4. **Report**: Notify supervisor and document incident
+
+### Fire Emergency
+1. **Pull Alarm**: Activate fire alarm if necessary
+2. **Evacuate**: Exit building using designated routes
+3. **Call 911**: Contact emergency services
+4. **Assemble**: Meet at designated assembly point
+
+## Chemical Handling
+
+### Storage
+- Store chemicals in appropriate containers
+- Keep incompatible chemicals separated
+- Label all containers clearly
+- Store in designated areas only
+
+### Disposal
+- Follow waste disposal guidelines
+- Use appropriate waste containers
+- Never pour chemicals down drains
+- Contact waste management for proper disposal
+
+## Training Requirements
+
+### Initial Training
+- Laboratory safety orientation
+- Chemical handling procedures
+- Emergency response training
+- Equipment operation training
+
+### Ongoing Training
+- Annual safety refresher courses
+- New procedure training as needed
+- Equipment-specific training
+
+## Documentation
+
+### Required Records
+- Training completion certificates
+- Incident reports
+- Equipment maintenance logs
+- Chemical inventory
+
+### Review Schedule
+- SOP review: Annually
+- Training records: Quarterly
+- Equipment inspection: Monthly
+
+## Contact Information
+
+### Emergency Contacts
+- **Campus Security**: (555) 123-4567
+- **Safety Officer**: (555) 123-4568
+- **Laboratory Manager**: (555) 123-4569
+
+### Non-Emergency
+- **Safety Department**: safety@university.edu
+- **Laboratory Services**: labservices@university.edu
+
+---
+
+**Document Control**
+- **Created**: January 15, 2024
+- **Last Updated**: January 15, 2024
+- **Next Review**: January 15, 2025
+- **Approved By**: Safety Committee

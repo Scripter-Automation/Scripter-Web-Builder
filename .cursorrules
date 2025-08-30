@@ -1,0 +1,52 @@
+# Scripter DevKit - Development Rules
+
+## Monaco Editor Usage
+- **NEVER** import Monaco Editor statically at the top of files
+- **ALWAYS** use dynamic imports with `await import('monaco-editor')` inside `onMount` or similar client-side hooks
+- **ALWAYS** check for `typeof window !== 'undefined'` before loading Monaco Editor
+- Monaco Editor is client-side only and will cause SSR errors if imported during server-side rendering
+
+## Project Architecture
+- This is a **SvelteKit** project using **Bun** runtime (not Node.js)
+- Use **Bun's fs and path APIs** instead of Node.js equivalents
+- **Svelte Stores (writable)** are used for in-memory state management
+- **TypeScript** is used throughout for type safety
+
+## Event Handling
+- **DO NOT** use `createEventDispatcher` (deprecated)
+- Use alternative event handling methods like Svelte's built-in event system
+- For component communication, use props, stores, or custom events
+
+## Dependencies
+- **Monaco Editor** is already installed and available
+- **mdsvex** is used for markdown processing
+- Use **Bun** for package management, not npm/yarn
+
+## Code Patterns
+- Use **regex-based markdown-to-HTML conversion** for live previews (simpler than mdsvex runtime compilation)
+- Implement **responsive design** with proper breakpoints
+- Ensure **100vw fit** - no horizontal scrolling
+- Use **body scrolling** instead of container scrolling for better UX
+
+## File Structure
+- **Toolkit Organization**: All development tools are organized under `src/routes/toolkit/`
+- **Tool Structure**: Each tool follows the pattern: `toolkit/[tool-name]/` containing:
+  - `+page.svelte` - Main tool interface
+  - `components/` - Tool-specific components
+  - `api/` - Tool-specific API endpoints (if needed)
+- **Shared Components**: Common components are in `src/lib/components/`
+- **Shared Utilities**: Utilities and types are in `src/lib/`
+- **Production Cleanup**: Remove `src/routes/toolkit/` folder before production deployment
+
+## UI/UX Guidelines
+- **Zero bloatware** - keep the project lightweight and minimalistic
+- **Plug and play** - tools should be immediately usable
+- **Professional appearance** - clean, modern interfaces
+- **Responsive design** - work on all screen sizes
+- **Natural scrolling** - use body scroll, not container scroll
+
+## Error Prevention
+- Always handle Monaco Editor imports dynamically
+- Check for browser environment before using client-only libraries
+- Use proper TypeScript types to catch errors early
+- Test responsive layouts across different screen sizes

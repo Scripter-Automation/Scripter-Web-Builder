@@ -175,8 +175,8 @@ Simply remove the `src/routes/toolkit/` folder before deploying to production to
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd scripter-devkit
+   git clone https://github.com/Scripter-Automation/Scripter-Web-Builder.git
+   cd web_builder
    ```
 
 2. **Install dependencies**

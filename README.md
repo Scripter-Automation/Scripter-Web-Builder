@@ -1,6 +1,26 @@
 # 🛠️ Scripter DevKit - Full-Code Development Platform
 
-## 🚀 The Revolutionary "Full-Code" Approach
+## 📋 Table of Contents
+
+- [🚀 Overview](#-overview)
+- [🎯 Why Choose Scripter DevKit?](#-why-choose-scripter-devkit)
+- [✨ Complete Development Toolkit](#-complete-development-toolkit)
+- [💡 The Full-Code Philosophy](#-the-full-code-philosophy)
+- [🚀 Quick Start](#-quick-start)
+- [📖 How to Use](#-how-to-use)
+- [🏗️ Project Structure](#️-project-structure)
+- [🛠️ Development](#️-development)
+- [🚀 Deployment](#-deployment)
+- [🚧 Current Development Status](#-current-development-status)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+- [📞 Support](#-support)
+- [🎯 Getting Started Today](#-getting-started-today)
+
+---
+
+## 🚀 Overview
 
 **Scripter DevKit** represents a revolutionary "Full-Code" development platform that bridges the gap between no-code platforms and traditional development. Unlike expensive web builders that lock you into their ecosystem, this platform provides AI-powered development tools while ensuring you maintain complete ownership of your code and infrastructure.
 
@@ -27,41 +47,9 @@
 | **Performance** | ❌ Bloated with dependencies | ✅ Zero bloatware, optimized |
 | **Deployment** | ❌ Platform-specific hosting | ✅ Deploy anywhere |
 
-### 🚀 Key Advantages
 
-**🎯 The Full-Code Revolution:**
-- **🤖 AI-Powered Development**: Leverage AI tools like Cursor, Gemini, and Kiro while maintaining complete code ownership
-- **💻 Your Infrastructure, Your Code**: No third-party dependencies or expensive subscriptions - use your own computer resources
-- **🎯 Beginner-Friendly Power**: Visual tools for non-developers combined with full codebase access for professionals
-- **⚡ Zero Limitations**: No platform restrictions, no vendor lock-in, no expensive plugins
-- **🔒 Complete Code Ownership**: The code is yours, generated on your infrastructure, with full customization capabilities
-- **🚀 Zero Bloatware**: Optimized performance with minimal dependencies and maximum efficiency
 
-## 🚀 The Full-Code Advantage
 
-### 🤖 AI-Powered Development
-Scripter DevKit embraces the power of AI tools like Cursor, Gemini, and Kiro while ensuring you maintain complete ownership of your code. Unlike traditional no-code platforms that generate code on their servers, our platform runs on your infrastructure, giving you full control and eliminating dependency on third-party services.
-
-### 💻 Your Infrastructure, Your Code
-- **No Third-Party Dependencies**: All code generation happens on your computer
-- **Complete Code Ownership**: The generated code is yours, with no licensing fees
-- **Choose Your Providers**: Use your preferred hosting, database, and service providers
-- **Use Free Libraries**: Leverage open-source libraries instead of expensive plugins
-- **Enterprise Ready**: No limitations, full customization, and complete control
-
-### 🎯 Beginner-Friendly Power
-- **Visual Tools**: Intuitive interfaces for non-developers
-- **Full Codebase Access**: Complete access to generated code for professionals
-- **AI Assistance**: AI-powered code generation and suggestions
-- **Learning Path**: Gradual transition from visual tools to code editing
-
-### 🚀 Zero Bloatware Advantage
-- **Built on SvelteKit**: Leverages SvelteKit's optimizations for performance
-- **Dynamic Loading**: Heavy components loaded only when needed using dynamic imports
-- **Lightweight Alternatives**: Custom markdown-to-HTML converter and visual editors
-- **Minimal Dependencies**: Only essential libraries included
-- **Production Ready**: Easy deployment by removing toolkit folder
-- **Your Infrastructure**: Runs on your own servers with full control
 
 ## ✨ Complete Development Toolkit
 
@@ -175,18 +163,7 @@ Each tool follows a consistent pattern:
 ### 🧹 Production Deployment
 Simply remove the `src/routes/toolkit/` folder before deploying to production to keep your application clean and optimized.
 
-### 🧩 Element Library
-- **HTML Elements**: Drag and drop common HTML elements (text, links, images, buttons)
-- **Layout Elements**: Container, section, div, article elements
-- **Form Elements**: Input, textarea, select, checkbox elements
 
-### 🔧 Developer Experience
-- **SvelteKit Integration**: Built on SvelteKit for modern web development
-- **TypeScript Support**: Full TypeScript support for type safety
-- **Hot Reload**: Instant updates during development
-- **Responsive Design**: Works on desktop and tablet devices
-- **Zero Bloatware**: No additional dependencies added to your project
-- **Direct File Editing**: Changes are applied directly to your source files in real-time
 
 ## 💡 The Full-Code Philosophy
 
@@ -203,18 +180,7 @@ To become the leading Full-Code development platform that bridges the gap betwee
 - **Accessibility**: Make enterprise development accessible to all skill levels
 - **Innovation**: Continuously push the boundaries of what's possible in development
 
-### 🆚 Full-Code vs No-Code/Low-Code
 
-| Feature | No-Code/Low-Code | Full-Code (Scripter DevKit) |
-|---------|------------------|------------------------------|
-| **Code Ownership** | ❌ Locked to platform | ✅ Complete ownership |
-| **Infrastructure** | ❌ Platform servers | ✅ Your own infrastructure |
-| **Customization** | ❌ Limited by platform | ✅ Unlimited customization |
-| **AI Integration** | ❌ Platform AI only | ✅ Your choice of AI tools |
-| **Cost** | ❌ Monthly subscriptions | ✅ One-time, no ongoing fees |
-| **Vendor Lock-in** | ❌ Trapped in ecosystem | ✅ No dependencies |
-| **Enterprise Use** | ❌ Limited scalability | ✅ Full enterprise capabilities |
-| **Learning Curve** | ❌ Platform-specific skills | ✅ Transferable development skills |
 
 ### 🎯 Perfect For:
 - **Developers**: Who want AI assistance without losing code control
@@ -291,18 +257,11 @@ Unlike those other guys who charge you for basic features:
    - **Ticketing System**: Navigate to `/toolkit/ticketing-system` for ticket management
    - **Admin Console**: Navigate to `/toolkit/admin-console` for database management
 
-2. **Launch the Builder**
-   - Open the application in your browser
-   - You'll see the main interface with sidebar, content area, and navigation
-
-3. **Navigate Your Project**
-   - Use the "Project" tab in the sidebar to browse your file structure
-   - Click on any `.svelte` file to open it in the visual editor
-
-4. **Edit Elements Visually**
+2. **Edit Elements Visually**
    - Click on any element in the rendered page
    - The CSS Properties Panel will appear on the right
    - Edit properties and see changes instantly
+   - Right-click on buttons to add functions with the context menu
 
 ### 📝 Using the SOP Manager
 
@@ -365,35 +324,13 @@ Unlike those other guys who charge you for basic features:
 
 ### 📁 File Management
 
-#### Visual vs Code Editing
-- **Svelte Files**: Open in visual editor for drag-and-drop editing
-- **Other Files**: Open in Monaco code editor for traditional code editing
-- **Automatic Switching**: The system automatically chooses the appropriate editor
-
-#### Project Navigation
-- **File Tree**: Browse your entire project structure
-- **File Selection**: Click any file to open and edit
-- **Real-time Updates**: Changes are saved automatically
-
 #### Direct File Editing
 - **No Save Required**: All changes are applied directly to your source files
 - **Instant Persistence**: Edits are written to disk immediately
 - **Version Control Ready**: Changes work seamlessly with Git and other VCS
 - **No Temporary Files**: No intermediate files or export steps needed
 
-### 🧩 Adding Elements
 
-1. **Switch to Elements Tab**
-   - Click the "Elements" tab in the sidebar
-
-2. **Choose Element Category**
-   - **Basic Elements**: Text, links, images, buttons
-   - **Layout Elements**: Containers, sections, divs
-   - **Form Elements**: Inputs, textareas, selects
-
-3. **Drag and Drop**
-   - Drag elements from the sidebar to your page
-   - Elements are automatically added to your Svelte component
 
 ## 🏗️ Project Structure
 
@@ -442,29 +379,19 @@ scripter-devkit/
 - **State Management**: Svelte stores
 
 ### Key Components
-
-#### Web Builder Components
 - **EditableRenderer**: Renders Svelte components visually
 - **CssPropertiesPanel**: Comprehensive CSS property controls
-- **BoxModel**: Interactive box model representation
-- **FolderStructure**: File tree navigation
-
-#### SOP Manager Components
+- **ContextMenu**: Right-click context menu for elements
+- **FunctionEditor**: Monaco Editor for adding functions to elements
 - **MarkdownEditor**: Monaco Editor configured for markdown
-- **MarkdownPreview**: Live preview with custom styling
-- **Example Templates**: Pre-built SOP templates
-
-#### Blog Manager Components
 - **BlogList**: Article listing with status, metadata, and actions
-- **ArticleEditor**: LinkedIn-style editor with metadata panel and content editor
 
 ### State Management
 The application uses Svelte stores for state management:
 - **editingState**: Tracks current element and editing state
-- **editorState**: Manages file content and editor type
+- **contextMenuState**: Manages context menu visibility and position
+- **functionEditorState**: Manages function editor state
 - **elementRegistry**: Maps elements to their data
-- **markdownContent**: Manages SOP document content
-- **articles**: Manages blog articles and their metadata
 
 ## 🚀 Deployment
 

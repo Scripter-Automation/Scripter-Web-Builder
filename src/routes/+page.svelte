@@ -1,5 +1,9 @@
 <script lang="ts">
     import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+    
+    function handleTestButtonClick() {
+        alert('Button clicked! Right-click me to test the context menu!');
+    }
 </script>
 
 <style>
@@ -308,6 +312,19 @@
         background: var(--gradient-red);
         box-shadow: var(--shadow-red-hover);
         filter: brightness(1.1);
+    }
+
+    .test-btn {
+        background: var(--gradient-yellow);
+        box-shadow: var(--shadow-yellow);
+        animation: pulse 2s infinite;
+    }
+
+    .test-btn:hover {
+        background: var(--gradient-yellow);
+        box-shadow: var(--shadow-yellow-hover);
+        filter: brightness(1.1);
+        animation: none;
     }
 
     
@@ -1793,6 +1810,7 @@
 					<a href="/toolkit/blog-manager" class="btn-primary blog-btn">✍️ Blog Manager</a>
 					<a href="/toolkit/sop-manager" class="btn-primary sop-btn">📝 SOP Manager</a>
 					<a href="#features" class="btn-secondary">📖 Learn More</a>
+					<button id="test-button" class="btn-primary test-btn" on:click={handleTestButtonClick}>🧪 Test Right-Click</button>
 				</div>
         </div>
     </section>

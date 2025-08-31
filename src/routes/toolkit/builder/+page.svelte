@@ -5,7 +5,9 @@
     import EditableRenderer from './components/EditableRenderer.svelte';
     import CssPropertiesPanel from './components/CssPropertiesPanel.svelte';
     import MonacoEditor from './components/MonacoEditor.svelte';
-    import { file, editingState, editingActions, editorState } from './store';
+    import ContextMenu from './components/ContextMenu.svelte';
+    import FunctionEditor from './components/FunctionEditor.svelte';
+    import { file, editingState, editingActions, editorState, contextMenuState, functionEditorState, contextMenuActions, functionEditorActions } from './store';
 
     const files = import.meta.glob('/src/routes/**/*.svelte', { as: 'raw' });
 
@@ -360,8 +362,14 @@
         height: 100%;
     }
     
-
-
+    /* Context menu and function editor z-index */
+    :global(.context-menu-overlay) {
+        z-index: 1000;
+    }
+    
+    :global(.function-editor-overlay) {
+        z-index: 2000;
+    }
 </style>
 
 <nav>
@@ -496,3 +504,24 @@
             </section>
         {/if}
     </main>
+    
+    <!-- Context Menu -->
+    <ContextMenu 
+        visible={$contextMenuState.visible}
+        x={$contextMenuState.x}
+        y={$contextMenuState.y}
+        elementId={$contextMenuState.elementId || ''}
+        elementType={$contextMenuState.elementType || ''}
+        on:addFunction={(event) => contextMenuActions.handleAddFunction(event.detail.elementId, event.detail.elementType)}
+        on:close={() => contextMenuActions.hide()}
+    />
+    
+    <!-- Function Editor -->
+    <FunctionEditor 
+        visible={$functionEditorState.visible}
+        elementId={$functionEditorState.elementId || ''}
+        elementType={$functionEditorState.elementType || ''}
+        elementCode={$functionEditorState.elementCode}
+        on:save={(event) => functionEditorActions.saveFunction(event.detail.elementId, event.detail.elementType, event.detail.code)}
+        on:cancel={() => functionEditorActions.hide()}
+    />

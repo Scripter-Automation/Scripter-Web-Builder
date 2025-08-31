@@ -1,43 +1,48 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
-	import * as monaco from 'monaco-editor';
 
 	export let content: string = '';
 
 	let editorContainer: HTMLElement;
-	let editor: monaco.editor.IStandaloneCodeEditor;
+	let editor: any;
 
-	onMount(() => {
-		if (editorContainer) {
-			editor = monaco.editor.create(editorContainer, {
-				value: content,
-				language: 'markdown',
-				theme: 'vs-dark',
-				automaticLayout: true,
-				minimap: { enabled: false },
-				scrollBeyondLastLine: false,
-				fontSize: 14,
-				lineNumbers: 'on',
-				wordWrap: 'on',
-				renderWhitespace: 'selection',
-				tabSize: 2,
-				insertSpaces: true,
-				detectIndentation: false,
-				trimAutoWhitespace: true,
-				largeFileOptimizations: false,
-				scrollbar: {
-					vertical: 'visible',
-					horizontal: 'visible'
-				}
-			});
+	onMount(async () => {
+		if (typeof window !== 'undefined' && editorContainer) {
+			try {
+				const monaco = await import('monaco-editor');
+				
+				editor = monaco.editor.create(editorContainer, {
+					value: content,
+					language: 'markdown',
+					theme: 'vs-dark',
+					automaticLayout: true,
+					minimap: { enabled: false },
+					scrollBeyondLastLine: false,
+					fontSize: 14,
+					lineNumbers: 'on',
+					wordWrap: 'on',
+					renderWhitespace: 'selection',
+					tabSize: 2,
+					insertSpaces: true,
+					detectIndentation: false,
+					trimAutoWhitespace: true,
+					largeFileOptimizations: false,
+					scrollbar: {
+						vertical: 'visible',
+						horizontal: 'visible'
+					}
+				});
 
-			// Update content when editor changes
-			editor.onDidChangeModelContent(() => {
-				content = editor.getValue();
-			});
+				// Update content when editor changes
+				editor.onDidChangeModelContent(() => {
+					content = editor.getValue();
+				});
 
-			// Set initial content
-			editor.setValue(content);
+				// Set initial content
+				editor.setValue(content);
+			} catch (error) {
+				console.error('Error loading Monaco Editor:', error);
+			}
 		}
 	});
 

@@ -1,5 +1,6 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
+    import { contextMenuActions } from '../store';
     
     const dispatch = createEventDispatcher();
     
@@ -49,6 +50,14 @@
         });
     }
     
+    function handleElementRightClick(event: MouseEvent) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        // Show context menu at mouse position
+        contextMenuActions.show(event.clientX, event.clientY, elementId, elementType);
+    }
+    
     function handleSave() {
         dispatch('save', {
             elementId,
@@ -77,6 +86,7 @@
         class="editable-wrapper"
         class:editing={isEditing}
         onclick={handleElementClick}
+        oncontextmenu={handleElementRightClick}
         onmouseenter={() => dispatch('hover', { elementId })}
         onmouseleave={() => dispatch('hover', { elementId: null })}
     >

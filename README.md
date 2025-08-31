@@ -30,6 +30,8 @@
 
 > **⚠️ Alpha Stage Notice**: This project is currently in its infancy and alpha development stage. While functional, it's actively being developed and may have bugs, incomplete features, or breaking changes. Use at your own risk and expect regular updates and improvements.
 
+> **🚨 CRITICAL SECURITY WARNING**: The development toolkit has direct file system access and can edit files on your server/computer. **ALWAYS remove the `src/routes/toolkit/` folder before deploying to production** to prevent security vulnerabilities. The toolkit is designed for development only and should never be deployed to production environments.
+
 ## 🎯 Why Choose Scripter DevKit?
 
 ### 🆚 The Full-Code Advantage Over Traditional Web Builders
@@ -161,7 +163,21 @@ Each tool follows a consistent pattern:
 - **`api/`** - Tool-specific API endpoints (if needed)
 
 ### 🧹 Production Deployment
-Simply remove the `src/routes/toolkit/` folder before deploying to production to keep your application clean and optimized.
+
+**🚨 CRITICAL SECURITY WARNING**: The development toolkit has direct file system access and can edit files on your server. **ALWAYS remove the `src/routes/toolkit/` folder before deploying to production** to prevent security vulnerabilities.
+
+```bash
+# MANDATORY: Remove toolkit before production deployment
+rm -rf src/routes/toolkit/
+```
+
+**Why this is critical:**
+- The toolkit can read and write files on your server
+- It has access to your entire project structure
+- Malicious users could potentially access sensitive files
+- The toolkit is designed for development only
+
+Simply remove the `src/routes/toolkit/` folder before deploying to production to keep your application clean, optimized, and secure.
 
 
 
@@ -243,6 +259,29 @@ Unlike those other guys who charge you for basic features:
 - **Documentation**: Documentation may be incomplete or outdated
 - **Testing**: Limited testing coverage - use in development environments only
 - **Contributions Welcome**: This is an active development project - contributions and feedback are encouraged
+
+### 🚨 CRITICAL SECURITY WARNING
+**⚠️ PRODUCTION DEPLOYMENT SECURITY RISK**
+
+The development toolkit has **direct file system access** and can edit files on your server/computer. This creates a **critical security vulnerability** if deployed to production.
+
+**MANDATORY: Remove the toolkit before production deployment**
+```bash
+# Before deploying to production, ALWAYS run:
+rm -rf src/routes/toolkit/
+```
+
+**Why this is critical:**
+- The toolkit can read and write files on your server
+- It has access to your entire project structure
+- Malicious users could potentially access sensitive files
+- The toolkit is designed for development only
+
+**Safe deployment checklist:**
+- ✅ Remove `src/routes/toolkit/` folder
+- ✅ Test your application without the toolkit
+- ✅ Verify no toolkit references remain
+- ✅ Deploy only the production application
 
 ## 📖 How to Use
 
